@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A324CB2E-A8F7-4368-A0B4-BEFC72E06665}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Store.StartApp</RootNamespace>
+    <AssemblyName>Store.StartApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Store.StartApp.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Core.3.2.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Factory, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Extensions.Factory.3.2.1.0\lib\net45-full\Ninject.Extensions.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Interception, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Extensions.Interception.3.2.0.0\lib\net45-full\Ninject.Extensions.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Interception.DynamicProxy, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.Extensions.Interception.DynamicProxy.3.2.0.0\lib\net45-full\Ninject.Extensions.Interception.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InjectionModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Store.AuthorizationService.Impl\Store.Authorization_Service.Impl.csproj">
+      <Project>{a70524da-3906-4773-8946-f6a5c999bce9}</Project>
+      <Name>Store.Authorization_Service.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.AuthorizationService\Store.Authorization_Service.csproj">
+      <Project>{7485d9b3-e8d0-46b2-8006-ee37a586e5ac}</Project>
+      <Name>Store.Authorization_Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.DataAccess.Factory\Store.DataAccess.Factory.csproj">
+      <Project>{c332bcb2-ba97-4e6e-b1ce-2a3c36a5658c}</Project>
+      <Name>Store.DataAccess.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.DataAccess.Impl\Store.DataAccess.Impl.csproj">
+      <Project>{56A398C5-7C40-4477-9C87-4EAEF9C058B6}</Project>
+      <Name>Store.DataAccess.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.DataAccess\Store.DataAccess.csproj">
+      <Project>{B465206D-1F27-4243-8E25-8960F53A991E}</Project>
+      <Name>Store.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Model\Store.Model.csproj">
+      <Project>{B1C94F7E-D10F-4D30-B59B-3553D0AE42A9}</Project>
+      <Name>Store.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Presenter.FabricOfPtresenter\Store.Presenter.FactoryOfPtresenter.csproj">
+      <Project>{69A25F25-015B-4A49-9B6F-3BABFD550BF8}</Project>
+      <Name>Store.Presenter.FactoryOfPtresenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Presenter.Impl\Store.Presenter.Impl.csproj">
+      <Project>{5E8F6533-678B-4640-8578-E00C97B0A69C}</Project>
+      <Name>Store.Presenter.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Presenter\Store.Presenter.csproj">
+      <Project>{CCF3E564-7882-437A-9D59-FA81C5D2A556}</Project>
+      <Name>Store.Presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.View.Impl\Store.View.Impl.csproj">
+      <Project>{5F6251F6-8795-4B3F-87FF-BBA41E402685}</Project>
+      <Name>Store.View.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.View\Store.View.csproj">
+      <Project>{5B4946BF-5C43-49B1-BF1C-BFE6285F8D8D}</Project>
+      <Name>Store.View</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

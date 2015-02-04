@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="13">
+      <Categories Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Categories</Alias>
+        <Columns isList="true" count="4">
+          <value>CategoryID,System.Int32</value>
+          <value>CategoryName,System.String</value>
+          <value>Description,System.String</value>
+          <value>Picture,System.Byte[]</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Categories</Name>
+        <NameInSource>Demo.Categories</NameInSource>
+      </Categories>
+      <Customers Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Customers</Alias>
+        <Columns isList="true" count="11">
+          <value>CustomerID,System.String</value>
+          <value>CompanyName,System.String</value>
+          <value>ContactName,System.String</value>
+          <value>ContactTitle,System.String</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Fax,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Customers</Name>
+        <NameInSource>Demo.Customers</NameInSource>
+      </Customers>
+      <Employees Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Employees</Alias>
+        <Columns isList="true" count="17">
+          <value>EmployeeID,System.Int32</value>
+          <value>LastName,System.String</value>
+          <value>FirstName,System.String</value>
+          <value>Title,System.String</value>
+          <value>TitleOfCourtesy,System.String</value>
+          <value>BirthDate,System.DateTime</value>
+          <value>HireDate,System.DateTime</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>HomePhone,System.String</value>
+          <value>Extension,System.String</value>
+          <value>Photo,System.Byte[]</value>
+          <value>Notes,System.String</value>
+          <value>ReportsTo,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Employees</Name>
+        <NameInSource>Demo.Employees</NameInSource>
+      </Employees>
+      <Order_x0020_Details Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Order Details</Alias>
+        <Columns isList="true" count="5">
+          <value>OrderID,System.Int32</value>
+          <value>ProductID,System.Int32</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>Quantity,System.Int16</value>
+          <value>Discount,System.Single</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Order Details</Name>
+        <NameInSource>Demo.Order Details</NameInSource>
+      </Order_x0020_Details>
+      <Orders Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Orders</Alias>
+        <Columns isList="true" count="14">
+          <value>OrderID,System.Int32</value>
+          <value>CustomerID,System.String</value>
+          <value>EmployeeID,System.Int32</value>
+          <value>OrderDate,System.DateTime</value>
+          <value>RequiredDate,System.DateTime</value>
+          <value>ShippedDate,System.DateTime</value>
+          <value>ShipVia,System.Int32</value>
+          <value>Freight,System.Decimal</value>
+          <value>ShipName,System.String</value>
+          <value>ShipAddress,System.String</value>
+          <value>ShipCity,System.String</value>
+          <value>ShipRegion,System.String</value>
+          <value>ShipPostalCode,System.String</value>
+          <value>ShipCountry,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Orders</Name>
+        <NameInSource>Demo.Orders</NameInSource>
+      </Orders>
+      <Products Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Products</Alias>
+        <Columns isList="true" count="10">
+          <value>ProductID,System.Int32</value>
+          <value>ProductName,System.String</value>
+          <value>SupplierID,System.Int32</value>
+          <value>CategoryID,System.Int32</value>
+          <value>QuantityPerUnit,System.String</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>UnitsInStock,System.Int16</value>
+          <value>UnitsOnOrder,System.Int16</value>
+          <value>ReorderLevel,System.Int16</value>
+          <value>Discontinued,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Products</Name>
+        <NameInSource>Demo.Products</NameInSource>
+      </Products>
+      <Shippers Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Shippers</Alias>
+        <Columns isList="true" count="3">
+          <value>ShipperID,System.Int32</value>
+          <value>CompanyName,System.String</value>
+          <value>Phone,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Shippers</Name>
+        <NameInSource>Demo.Shippers</NameInSource>
+      </Shippers>
+      <Suppliers Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Suppliers</Alias>
+        <Columns isList="true" count="12">
+          <value>SupplierID,System.Int32</value>
+          <value>CompanyName,System.String</value>
+          <value>ContactName,System.String</value>
+          <value>ContactTitle,System.String</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Fax,System.String</value>
+          <value>HomePage,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Suppliers</Name>
+        <NameInSource>Demo.Suppliers</NameInSource>
+      </Suppliers>
+      <Countries Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Countries</Alias>
+        <Columns isList="true" count="3">
+          <value>CountriesID,System.Int32</value>
+          <value>Flag,System.Byte[]</value>
+          <value>CountryName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Countries</Name>
+        <NameInSource>Demo.Countries</NameInSource>
+      </Countries>
+      <States Ref="11" type="DataTableSource" isKey="true">
+        <Alias>States</Alias>
+        <Columns isList="true" count="4">
+          <value>Name,System.String</value>
+          <value>USPS,System.String</value>
+          <value>Population,System.Int32</value>
+          <value>Capital,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>States</Name>
+        <NameInSource>Demo.States</NameInSource>
+      </States>
+      <Auto Ref="12" type="DataTableSource" isKey="true">
+        <Alias>Auto</Alias>
+        <Columns isList="true" count="5">
+          <value>Rank,System.Double</value>
+          <value>Country,System.String</value>
+          <value>Year2009,System.Double</value>
+          <value>Year2005,System.Double</value>
+          <value>Year2000,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Auto</Name>
+        <NameInSource>Demo.Auto</NameInSource>
+      </Auto>
+      <GlobalGrowth Ref="13" type="DataTableSource" isKey="true">
+        <Alias>GlobalGrowth</Alias>
+        <Columns isList="true" count="5">
+          <value>Region,System.String</value>
+          <value>Year2006,System.Double</value>
+          <value>Year2007,System.Double</value>
+          <value>Year2008,System.Double</value>
+          <value>Year2009,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>GlobalGrowth</Name>
+        <NameInSource>Demo.GlobalGrowth</NameInSource>
+      </GlobalGrowth>
+      <Opec Ref="14" type="DataTableSource" isKey="true">
+        <Alias>Opec</Alias>
+        <Columns isList="true" count="9">
+          <value>Year,System.Double</value>
+          <value>Iran,System.Double</value>
+          <value>Iraq,System.Double</value>
+          <value>Kuwait,System.Double</value>
+          <value>Saudi_x0020_Arabia,System.Double</value>
+          <value>UAE,System.Double</value>
+          <value>Venezuela,System.Double</value>
+          <value>Libya,System.Double</value>
+          <value>Nigeria,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Opec</Name>
+        <NameInSource>Demo.Opec</NameInSource>
+      </Opec>
+    </DataSources>
+    <Relations isList="true" count="7">
+      <Orders Ref="15" type="DataRelation" isKey="true">
+        <Alias>Orders</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>OrderID</value>
+        </ChildColumns>
+        <ChildSource isRef="5" />
+        <Dictionary isRef="1" />
+        <Name>Orders</Name>
+        <NameInSource>OrdersOrderDetails</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>OrderID</value>
+        </ParentColumns>
+        <ParentSource isRef="6" />
+      </Orders>
+      <Products Ref="16" type="DataRelation" isKey="true">
+        <Alias>Products</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ChildColumns>
+        <ChildSource isRef="5" />
+        <Dictionary isRef="1" />
+        <Name>Products</Name>
+        <NameInSource>ProductsOrderDetails</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ParentColumns>
+        <ParentSource isRef="7" />
+      </Products>
+      <Customers Ref="17" type="DataRelation" isKey="true">
+        <Alias>Customers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>Customers</Name>
+        <NameInSource>CustomersOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </Customers>
+      <Employees Ref="18" type="DataRelation" isKey="true">
+        <Alias>Employees</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>EmployeeID</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>Employees</Name>
+        <NameInSource>EmployeesOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>EmployeeID</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </Employees>
+      <Shippers Ref="19" type="DataRelation" isKey="true">
+        <Alias>Shippers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ShipVia</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>Shippers</Name>
+        <NameInSource>ShippersOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ShipperID</value>
+        </ParentColumns>
+        <ParentSource isRef="8" />
+      </Shippers>
+      <Categories Ref="20" type="DataRelation" isKey="true">
+        <Alias>Categories</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Categories</Name>
+        <NameInSource>CategoriesProducts</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </Categories>
+      <Suppliers Ref="21" type="DataRelation" isKey="true">
+        <Alias>Suppliers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Suppliers</Name>
+        <NameInSource>SuppliersProducts</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Suppliers>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="7">
+      <value>,OrganizationFrom,OrganizationFrom,System.String,,False,False</value>
+      <value>,NumberOfInvoice,NumberOfInvoice,System.String,,False,False</value>
+      <value>,DateOfInvoice,DateOfInvoice,System.String,,False,False</value>
+      <value>,OrganizationTo,OrganizationTo,System.String,,False,False</value>
+      <value>,ArticleId,ArticleId,System.String,,False,False</value>
+      <value>,ArticleName,ArticleName,System.String,,False,False</value>
+      <value>,ArticleAmount,ArticleAmount,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="22" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="10">
+        <Text1 Ref="23" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.4,0,6.6,2.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Text>Приложение 13 
+к приказу Министра финансов 
+Республики Казахстан 
+от 21 июня 2007 года N 216 
+
+                                      Форма З-8 </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Text2 Ref="24" type="Text" isKey="true">
+          <AllowHtmlTags>True</AllowHtmlTags>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.6,12.4,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Text>Организация (индивидуальный предприниматель): &lt;u&gt;{OrganizationFrom}&lt;/u&gt;</Text>
+          <TextBrush>Black</TextBrush>
+          <TextQuality>Wysiwyg</TextQuality>
+          <Type>Expression</Type>
+        </Text2>
+        <Text3 Ref="25" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.8,4.8,9.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,11,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Text>НАКЛАДНАЯ НА ОТПУСК ЗАПАСОВ НА СТОРОНУ</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text3>
+        <Panel1 Ref="26" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.2,3.6,4.8,2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Table1 Ref="27" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,4.8,1.6</ClientRectangle>
+              <ColumnCount>2</ColumnCount>
+              <Components isList="true" count="4">
+                <Table1_Cell1 Ref="28" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,2.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,7</Font>
+                  <ID>0</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table1_Cell1</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="27" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Номер
+накладной</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table1_Cell1>
+                <Table1_Cell2 Ref="29" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>2.4,0,2.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,7</Font>
+                  <ID>1</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table1_Cell2</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="27" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Дата
+накладной</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table1_Cell2>
+                <Table1_Cell3 Ref="30" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.8,2.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,7</Font>
+                  <ID>5</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table1_Cell3</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="27" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{NumberOfInvoice}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table1_Cell3>
+                <Table1_Cell4 Ref="31" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>2.4,0.8,2.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,7</Font>
+                  <ID>6</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table1_Cell4</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="27" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{DateOfInvoice}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table1_Cell4>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataRelationName isNull="true" />
+              <Filters isList="true" count="0" />
+              <MinHeight>0.4</MinHeight>
+              <Name>Table1</Name>
+              <NumberID>25</NumberID>
+              <Page isRef="22" />
+              <Parent isRef="26" />
+              <RowCount>2</RowCount>
+              <Sort isList="true" count="0" />
+            </Table1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Panel1</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </Panel1>
+        <Panel2 Ref="32" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.5,19,1.4</ClientRectangle>
+          <Components isList="true" count="1">
+            <Table2 Ref="33" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+              <ColumnCount>2</ColumnCount>
+              <Components isList="true" count="4">
+                <Table2_Cell1 Ref="34" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>0</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table2_Cell1</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="33" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Организация (Индивидуальный предприниматель) - отправитель</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table2_Cell1>
+                <Table2_Cell2 Ref="35" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0,9.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>1</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table2_Cell2</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="33" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Организация (Индивидуальный предприниматель) - получатель</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table2_Cell2>
+                <Table2_Cell3 Ref="36" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.4,9.6,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>5</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table2_Cell3</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="33" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{OrganizationFrom}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table2_Cell3>
+                <Table2_Cell4 Ref="37" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0.4,9.4,0.4</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>6</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table2_Cell4</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="33" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{OrganizationTo}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table2_Cell4>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataRelationName isNull="true" />
+              <Filters isList="true" count="0" />
+              <MinHeight>0.4</MinHeight>
+              <Name>Table2</Name>
+              <NumberID>25</NumberID>
+              <Page isRef="22" />
+              <Parent isRef="32" />
+              <RowCount>2</RowCount>
+              <Sort isList="true" count="0" />
+            </Table2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Panel2</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </Panel2>
+        <Panel3 Ref="38" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.5,19,2.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Table3 Ref="39" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,1.6</ClientRectangle>
+              <ColumnCount>3</ColumnCount>
+              <Components isList="true" count="6">
+                <Table3_Cell1 Ref="40" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,2.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>0</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell1</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Номер
+товара</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell1>
+                <Table3_Cell2 Ref="41" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>2.8,0,12.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>1</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell2</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Наименование товара</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell2>
+                <Table3_Cell3 Ref="42" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>15.4,0,3.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>2</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell3</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Количество товара (ящ.)</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell3>
+                <Table3_Cell4 Ref="43" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0.8,2.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>5</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell4</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ArticleId}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell4>
+                <Table3_Cell5 Ref="44" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>2.8,0.8,12.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>6</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell5</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ArticleName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell5>
+                <Table3_Cell6 Ref="45" type="TableCell" isKey="true">
+                  <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>15.4,0.8,3.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>7</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Table3_Cell6</Name>
+                  <Page isRef="22" />
+                  <Parent isRef="39" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ArticleAmount}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                </Table3_Cell6>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataRelationName isNull="true" />
+              <Filters isList="true" count="0" />
+              <MinHeight>0.4</MinHeight>
+              <Name>Table3</Name>
+              <NumberID>45</NumberID>
+              <Page isRef="22" />
+              <Parent isRef="38" />
+              <RowCount>2</RowCount>
+              <Sort isList="true" count="0" />
+            </Table3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Panel3</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+        </Panel3>
+        <Text4 Ref="46" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,12.4,5.4,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,12</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Text>Товар отпустил (подпись):</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text4>
+        <Text5 Ref="47" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.6,12.4,5.6,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,12</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Text>Товар получил (подпись):</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text5>
+        <HorizontalLinePrimitive1 Ref="48" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.6,14,5.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="49" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <StartCap Ref="50" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive1>
+        <HorizontalLinePrimitive2 Ref="51" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>12.6,14,5.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="52" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Name>HorizontalLinePrimitive2</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <StartCap Ref="53" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>eb6377bc525d4caf86b795b64b46eb42</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="54" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="55" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>1/13/2015 8:15:14 PM</ReportChanged>
+  <ReportCreated>1/12/2015 11:33:14 PM</ReportCreated>
+  <ReportFile>C:\Users\2\Desktop\Report.mrt</ReportFile>
+  <ReportGuid>3fc11110d5a244c5846ff6ef88fcac7d</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="13">
+    <Серый_x0020_50_x0025__Заголовок_Отчета1 Ref="56" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item50 Ref="57" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item50>
+      </Conditions>
+      <Description />
+      <Font>Arial,14,Bold</Font>
+      <Name>Серый 50%_Заголовок_Отчета1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Заголовок_Отчета1>
+    <Серый_x0020_50_x0025__Заголовок_Отчета2 Ref="58" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item52 Ref="59" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item52>
+      </Conditions>
+      <Description />
+      <Font>Arial,10,Bold</Font>
+      <Name>Серый 50%_Заголовок_Отчета2</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Заголовок_Отчета2>
+    <Серый_x0020_50_x0025__Итог_Отчета1 Ref="60" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item54 Ref="61" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item54>
+      </Conditions>
+      <Description />
+      <Font>Arial,12,Bold</Font>
+      <Name>Серый 50%_Итог_Отчета1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Итог_Отчета1>
+    <Серый_x0020_50_x0025__Итог_Отчета2 Ref="62" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item56 Ref="63" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportSummary</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item56>
+      </Conditions>
+      <Description />
+      <Font>Arial,10,Bold</Font>
+      <Name>Серый 50%_Итог_Отчета2</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Итог_Отчета2>
+    <Серый_x0020_50_x0025__Заголовок_Страницы Ref="64" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item58 Ref="65" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item58>
+      </Conditions>
+      <Description />
+      <Font>Arial,10</Font>
+      <Name>Серый 50%_Заголовок_Страницы</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Заголовок_Страницы>
+    <Серый_x0020_50_x0025__Итог_Страницы Ref="66" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item60 Ref="67" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item60>
+      </Conditions>
+      <Description />
+      <Font>Arial,10</Font>
+      <Name>Серый 50%_Итог_Страницы</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Итог_Страницы>
+    <Серый_x0020_50_x0025__Заголовок_Группы1 Ref="68" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item62 Ref="69" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item62>
+      </Conditions>
+      <Description />
+      <Font>Arial,13,Bold</Font>
+      <Name>Серый 50%_Заголовок_Группы1</Name>
+      <TextBrush>[15:15:15]</TextBrush>
+    </Серый_x0020_50_x0025__Заголовок_Группы1>
+    <Серый_x0020_50_x0025__Итог_Группы1 Ref="70" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item64 Ref="71" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item64>
+      </Conditions>
+      <Description />
+      <Font>Arial,13,Bold</Font>
+      <Name>Серый 50%_Итог_Группы1</Name>
+      <TextBrush>[15:15:15]</TextBrush>
+    </Серый_x0020_50_x0025__Итог_Группы1>
+    <Серый_x0020_50_x0025__Заголовок_Данных1 Ref="72" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black;True</Border>
+      <Brush>[165:165:165]</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item66 Ref="73" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item66>
+      </Conditions>
+      <Description />
+      <Font>Arial,8,Bold</Font>
+      <Name>Серый 50%_Заголовок_Данных1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Заголовок_Данных1>
+    <Серый_x0020_50_x0025__Данные1 Ref="74" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black;True</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item68 Ref="75" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item68>
+      </Conditions>
+      <Description />
+      <Font>Arial,8</Font>
+      <Name>Серый 50%_Данные1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Данные1>
+    <Серый_x0020_50_x0025__Данные1_Стиль_x0020_нечетных_x0020_строк Ref="76" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black;True</Border>
+      <Brush>[255:255:255]</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item70 Ref="77" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item70>
+      </Conditions>
+      <Description />
+      <Font>Arial,8</Font>
+      <Name>Серый 50%_Данные1_Стиль нечетных строк</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Данные1_Стиль_x0020_нечетных_x0020_строк>
+    <Серый_x0020_50_x0025__Данные1_Стиль_x0020_четных_x0020_строк Ref="78" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black;True</Border>
+      <Brush>[240:240:240]</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item72 Ref="79" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item72>
+      </Conditions>
+      <Description />
+      <Font>Arial,8</Font>
+      <Name>Серый 50%_Данные1_Стиль четных строк</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Данные1_Стиль_x0020_четных_x0020_строк>
+    <Серый_x0020_50_x0025__Итог_Данных1 Ref="80" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSidesFromLocation>True</AllowUseBorderSidesFromLocation>
+      <Border>None;[65:65:65];1;Solid;False;4;Black;True</Border>
+      <Brush>[185:185:185]</Brush>
+      <CollectionName>Серый 50%</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item74 Ref="81" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item74>
+      </Conditions>
+      <Description />
+      <Font>Arial,8</Font>
+      <Name>Серый 50%_Итог_Данных1</Name>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Серый_x0020_50_x0025__Итог_Данных1>
+  </Styles>
+</StiSerializer>

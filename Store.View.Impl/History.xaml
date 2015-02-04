@@ -1,0 +1,18 @@
+﻿<Window x:Class="Store.View.Impl.History"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="История накладной" Height="500" Width="700" ResizeMode="NoResize" Icon="Images/StoreIco.png" Background="#FFF7F1F1" Closing="History_OnClosing" Activated="History_OnActivated">
+    <Grid>
+        <DataGrid Name="HistoriesTable" HorizontalAlignment="Left" VerticalAlignment="Top" Height="472" Width="684" CanUserAddRows="False" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата изменения" Binding="{Binding dataChanged}"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding typeChanged}"/>
+                <DataGridTextColumn Header="От кого" Binding="{Binding fromChanged}"/>
+                <DataGridTextColumn Header="Кому" Binding="{Binding toChanged}"/>
+                <DataGridTextColumn Header="Пользователь" Binding="{Binding nameOfChanger}"/>
+                <DataGridTextColumn Header="Товар" Binding="{Binding articleNameChanged}" Width="1*"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding articleAmountChanged}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
